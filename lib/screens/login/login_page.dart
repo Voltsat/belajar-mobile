@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:belajar_flutter/screens/home_page.dart';
+import 'package:belajar_flutter/screens/home/home_page.dart';
 
 class Loginpage extends StatefulWidget {
   const Loginpage({super.key});
@@ -22,7 +22,7 @@ class _LoginpageState extends State<Loginpage> {
       );
 
       Navigator.push(
-        context,MaterialPageRoute(builder: (context) => Homepage(nama: nama,)),
+        context,MaterialPageRoute(builder: (context) => HomePage(nama: nama,)),
       );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
