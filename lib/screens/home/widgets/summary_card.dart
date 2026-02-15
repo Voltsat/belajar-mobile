@@ -41,6 +41,7 @@ class SummaryCard extends StatelessWidget {
                 ),
               ],
             ),
+
             const SizedBox(height: 20),
 
             Row(
@@ -48,16 +49,60 @@ class SummaryCard extends StatelessWidget {
                 Stack(
                   alignment: Alignment.center,
                   children: [
-                    SizedBox(
-                      width: 120,
-                      height: 120,
-                      child: CircularProgressIndicator(
-                        value: 0.7,
-                        strokeWidth: 10,
-                        color: Colors.orange,
-                        backgroundColor: Colors.grey.shade200,
+                    Transform.rotate(
+                      angle: -6.3,
+                      child: Transform.scale(
+                        scaleX: -1,
+                        child: SizedBox(
+                          width: 140,
+                          height: 140,
+                          child: CircularProgressIndicator(
+                            value: 0.84,
+                            strokeWidth: 10,
+                            strokeCap: StrokeCap.round,
+                            color: Colors.greenAccent,
+                            backgroundColor: Colors.grey.shade200,
+                          ),
+                        ),
                       ),
                     ),
+
+                    Transform.rotate(
+                      angle: -6.4,
+                      child: Transform.scale(
+                        scaleX: -1,
+                        child: SizedBox(
+                          width: 105,
+                          height: 105,
+                          child: CircularProgressIndicator(
+                            value: 0.67,
+                            strokeWidth: 10,
+                            strokeCap: StrokeCap.round,
+                            color: Colors.blueAccent,
+                            backgroundColor: Colors.grey.shade200,
+                          ),
+                        ),
+                      ),
+                    ),
+
+                    Transform.rotate(
+                      angle: -6.3,
+                      child: Transform.scale(
+                        scaleX: -1,
+                        child: SizedBox(
+                          width: 70,
+                          height: 70,
+                          child: CircularProgressIndicator(
+                            value: 0.77,
+                            strokeWidth: 10,
+                            strokeCap: StrokeCap.round,
+                            color: Colors.orange,
+                            backgroundColor: Colors.grey.shade200,
+                          ),
+                        ),
+                      ),
+                    ),
+
                     const Icon(Icons.flash_on, size: 30, color: Colors.grey),
                   ],
                 ),

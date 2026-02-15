@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'widgets/home_header.dart';
 import 'widgets/summary_card.dart';
 import '../../widgets/foot_nav.dart';
+import 'widgets/quick_start_section.dart';
+import 'widgets/community_challenge_card.dart';
 
 class HomePage extends StatefulWidget {
   final String nama;
@@ -28,7 +30,12 @@ class _HomePageState extends State<HomePage> {
           children: [
             HomeHeader(nama: widget.nama),
             const SizedBox(height: 20),
-            const SummaryCard()
+            const SummaryCard(),
+            const SizedBox(height: 20,),
+            QuickStartSection(),
+            const SizedBox(height: 20,),
+            const CommunityChallengeCard(),
+            const SizedBox(height: 20,),
           ],
         ),
       );
