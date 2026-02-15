@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import '../../widgets/foot_nav.dart';
+
+// Home
 import 'widgets/home_header.dart';
 import 'widgets/summary_card.dart';
-import '../../widgets/foot_nav.dart';
 import 'widgets/quick_start_section.dart';
 import 'widgets/community_challenge_card.dart';
 
@@ -40,7 +42,13 @@ class _HomePageState extends State<HomePage> {
         ),
       );
     } else if (_selectedIndex == 1) {
-      return const Center(child: Text("Stats"),);
+      return SingleChildScrollView(
+        child: Column(
+          children: [
+            HomeHeader(nama: widget.nama),
+          ],
+        ),
+      );
     } else if (_selectedIndex == 2 ) {
       return const Center(child: Text("Profile"),);
     } else {
