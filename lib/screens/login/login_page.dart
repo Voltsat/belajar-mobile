@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:belajar_flutter/screens/home/home_page.dart';
+import 'package:belajar_flutter/screens/home_page.dart';
 
 class Loginpage extends StatefulWidget {
   const Loginpage({super.key});
@@ -21,8 +21,10 @@ class _LoginpageState extends State<Loginpage> {
         SnackBar(content: Text("Login Berhasil!"))
       );
 
-      Navigator.push(
+      Navigator.pushAndRemoveUntil(
         context,MaterialPageRoute(builder: (context) => HomePage(nama: nama,)),
+          (route) => false,
+
       );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(

@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
-import 'summary_box.dart';
+import 'summary_card.dart';
 
 class SummaryCard extends StatelessWidget {
   const SummaryCard({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
-      child: Container(
+    return Container(
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
           color: Colors.white,
@@ -138,7 +136,6 @@ class SummaryCard extends StatelessWidget {
             ),
           ],
         ),
-      ),
     );
   }
 }

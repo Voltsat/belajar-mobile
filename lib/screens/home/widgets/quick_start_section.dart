@@ -37,9 +37,7 @@ class QuickStartSection extends StatelessWidget {
       },
     ];
 
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
-      child: Column(
+    return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
@@ -90,7 +88,6 @@ class QuickStartSection extends StatelessWidget {
             },
           ),
         ],
-      ),
     );
   }
 }

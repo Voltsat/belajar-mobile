@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomeHeader extends StatelessWidget {
-  const HomeHeader({super.key});
+class StatsHeader extends StatelessWidget {
+  const StatsHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class HomeHeader extends StatelessWidget {
               Text(
                 'Progress',
                 style: const TextStyle(
-                  fontSize: 24,
+                  fontSize: 26,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -24,8 +24,8 @@ class HomeHeader extends StatelessWidget {
               const SizedBox(height: 4),
 
               const Text(
-                'Keep up the',
-                style: TextStyle(fontSize: 16, color: Colors.grey),
+                'Keep up the momentum!',
+                style: TextStyle(fontSize: 14, color: Colors.grey),
               ),
             ],
           ),

@@ -7,9 +7,7 @@ class HomeHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(16),
-      child: Row(
+    return Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Column(
@@ -34,7 +32,7 @@ class HomeHeader extends StatelessWidget {
               Container(
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  border: Border.all(color: Color(0xFF05e805), width: 3),
+                  border: Border.all(color: Color(0xFF02f202), width: 3),
                 ),
                 child: CircleAvatar(
                   radius: 22,
@@ -50,7 +48,7 @@ class HomeHeader extends StatelessWidget {
                   height: 14,
                   width: 14,
                   decoration: BoxDecoration(
-                    color: Color(0xFF05e805),
+                    color: Color(0xFF02f202),
                     shape: BoxShape.circle,
                     border: Border.all(color: Colors.white, width: 2),
                   ),
@@ -59,7 +57,6 @@ class HomeHeader extends StatelessWidget {
             ],
           ),
         ],
-      ),
     );
   }
 }
