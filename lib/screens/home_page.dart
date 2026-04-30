@@ -12,6 +12,7 @@ import 'stats/widgets/stats_header.dart';
 import 'stats/widgets/weekly_monthly_button.dart';
 import 'stats/widgets/calories_times_section.dart';
 import 'stats/widgets/calories_chart.dart';
+import 'stats/widgets/duration_chart.dart';
 
 class HomePage extends StatefulWidget {
   final String nama;
@@ -72,6 +73,10 @@ class _HomePageState extends State<HomePage> {
               CaloriesTimesSection(isWeekly: isWeekly),
               const SizedBox(height: 20),
               CaloriesChart(),
+              const SizedBox(height: 20,),
+              DurationChart(),
+              const SizedBox(height: 20,),
+
             ],
           ),
         ),
